@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "X Video Archiver",
+  "version": "1.0",
+  "description": "Twitter (X) video arşivleme ve indirme otomasyonu. Tamamen tarayıcı tabanlı çalışır.",
+  "permissions": [
+    "downloads",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.twitter.com/*",
+    "*://*.x.com/*",
+    "*://api.vxtwitter.com/*",
+    "*://api.fxtwitter.com/*",
+    "*://*.twimg.com/*"
+  ],
+  "action": {
+    "default_title": "X Video Archiver'ı Aç",
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
